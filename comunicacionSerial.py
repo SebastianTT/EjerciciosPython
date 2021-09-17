@@ -4,7 +4,7 @@ if __name__ == '__main__':
         hexadecimalAEntero = int(i, base=16)
         binario = bin(hexadecimalAEntero)[2:].zfill(16)
         print(f'HEXADECIMAL: {i}')
-        print(f"ESTADO: {'Encendido' if binario[0] == 1 else 'Apagado'}")
+        print(f"ESTADO: {'Encendido' if binario[0] == '1' else 'Apagado'}")
         print(f'LEDS EN TOTAL: {int(binario[1:8], 2)}')
         print(f'VALOR DEL PULSO {int(binario[8::], 2)}')
         print('\n')
